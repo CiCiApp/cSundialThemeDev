@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+
+    <script src="/{{static_token}}/js/libs/require.js" data-main="/{{static_token}}/js/common"></script>
+    <script type="application/javascript">
+        require([
+            'views/dir_listing'
+        ], function (AppView) {
+            "use strict";
+            new AppView();
+        });
+    </script>
 </head>
 <body>
-
+    <input type="hidden" value="{{static_token}}" id="static-token">
+    <div id="content"></div>
 </body>
 </html>
