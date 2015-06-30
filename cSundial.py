@@ -6,7 +6,7 @@ static_token = str(uuid.uuid1())
 
 project_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.join(project_dir, 'tests')
-theme_name = 'solar'
+theme_name = 'default'
 theme_dir = os.path.join(project_dir, 'themes', theme_name)
 template_dir = os.path.join(theme_dir, 'html')
 
