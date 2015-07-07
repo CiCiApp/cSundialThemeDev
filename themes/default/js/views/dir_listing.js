@@ -5,6 +5,14 @@ define([
 ], function (require, $, Backbone) {
     "use strict";
 
+    var FileItem = Backbone.Model.extend({
+
+    });
+
+    var FileList = Backbone.Collection.extend({
+
+    });
+
     return Backbone.View.extend({
         el: $('#content'),
 
